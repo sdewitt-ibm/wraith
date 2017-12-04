@@ -3,9 +3,9 @@ require "./lib/wraith/cli"
 require "pry"
 
 def create_diff_image
-  capture_image = saving.construct_command(320, test_url1, test_image1, selector, false, false)
+  capture_image = saving.construct_command(320, test_url1, test_image1, selector, false, false, false, false)
   `#{capture_image}`
-  capture_image = saving.construct_command(320, test_url2, test_image2, selector, false, false)
+  capture_image = saving.construct_command(320, test_url2, test_image2, selector, false, false, false, false)
   `#{capture_image}`
 end
 

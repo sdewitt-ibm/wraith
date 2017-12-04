@@ -30,6 +30,10 @@ class CaptureOptions
     options["before_capture"] ? convert_to_absolute(options["before_capture"]) : false
   end
 
+  def before_open
+    options["before_open"] ? convert_to_absolute(options["before_open"]) : false
+  end
+  
   def base_url
     base_urls(path)
   end

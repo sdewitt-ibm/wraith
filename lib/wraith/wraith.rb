@@ -103,6 +103,10 @@ class Wraith::Wraith
     @config["before_capture"] ? convert_to_absolute(@config["before_capture"]) : false
   end
 
+  def before_open
+    @config["before_capture"] ? convert_to_absolute(@config["before_open"]) : false
+  end
+  
   def widths
     @config["screen_widths"]
   end
